@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Éclat Beauty - Products</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="products.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="nav-inner">
+            <a href="index.html" class="brand">
+                <span class="brand-mark">É</span>
+                <span class="brand-name">Éclat Beauty</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#products">Products</a>
+                <a href="#collections">Collections</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <!-- <button class="nav-cta">Shop Now</button> -->
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="products" class="section page-hero">
+            <div class="eyebrow">Shop · Glow smarter</div>
+            <div class="section-title">
+                <h1>All products</h1>
+                <p>Curated pigments, skincare-first bases, and artist-approved essentials in our signature Éclat finish.
+                </p>
+            </div>
+            <div class="filter-row">
+                <button class="chip active">All</button>
+                <button class="chip">Complexion</button>
+                <button class="chip">Lips</button>
+                <button class="chip">Eyes</button>
+                <button class="chip">Vegan</button>
+                <button class="chip">Bestsellers</button>
+                <button class="chip">New</button>
+            </div>
+        </section>
+
+        <section class="section products-page">
+            <div class="products-layout">
+                <aside class="filter-panel" id="collections">
+                    <div class="filter-header">
+                        <h3>Filter</h3>
+                        <span class="pill accent">Live</span>
+                    </div>
+                    <div class="filter-group">
+                        <h4>Category</h4>
+                        <div class="filter-tags">
+                            <button class="chip active">All</button>
+                            <button class="chip">Complexion</button>
+                            <button class="chip">Lips</button>
+                            <button class="chip">Eyes</button>
+                            <button class="chip">Sets</button>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <h4>Finish</h4>
+                        <div class="filter-tags">
+                            <button class="chip">Matte</button>
+                            <button class="chip">Satin</button>
+                            <button class="chip">Dewy</button>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <h4>Ethos</h4>
+                        <div class="filter-tags">
+                            <button class="chip">Vegan</button>
+                            <button class="chip">Cruelty-Free</button>
+                            <button class="chip">Clean</button>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <h4>Price</h4>
+                        <div class="filter-range">
+                            <span>$18</span>
+                            <div class="range-track">
+                                <div class="range-fill"></div>
+                            </div>
+                            <span>$42</span>
+                        </div>
+                    </div>
+                </aside>
+
+                <div class="products-content">
+                    <div class="products-toolbar">
+                        <span class="muted">Showing 12 products</span>
+                        <div class="sort">
+                            <label for="sort">Sort</label>
+                            <select id="sort" name="sort">
+                                <option style="color: black;">Featured</option>
+                                <option style="color: black;">Price: Low to High</option>
+                                <option style="color: black;">Price: High to Low</option>
+                                <option style="color: black;">New Arrivals</option>
+                                <option style="color: black;">Bestsellers</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="products-grid">
+                        <article class="product-card">
+                            <div class="product-media"
+                                style="background-image: url('https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=900&q=80');">
+                            </div>
+                            <div class="product-body">
+                                <span class="pill success">Bestseller</span>
+                                <h3>Velvet Cloud Tint</h3>
+                                <p>Featherlight tint with buildable coverage and a blurred, soft-focus finish.</p>
+                                <div class="product-meta">
+                                    <span class="price">$29</span>
+                                    <button class="btn ghost small">Add to Bag</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card">
+                            <div class="product-media"
+                                style="background-image: url('https://images.unsplash.com/photo-1526045478516-99145907023c?auto=format&fit=crop&w=900&q=80');">
+                            </div>
+                            <div class="product-body">
+                                <span class="pill">New</span>
+                                <h3>Serum Glow Foundation</h3>
+                                <p>Hydrating serum-foundation hybrid with niacinamide for seamless radiance.</p>
+                                <div class="product-meta">
+                                    <span class="price">$34</span>
+                                    <button class="btn ghost small">Add to Bag</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card">
+                            <div class="product-media"
+                                style="background-image: url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=900&q=80');">
+                            </div>
+                            <div class="product-body">
+                                <span class="pill accent">Vegan</span>
+                                <h3>Luminary Lip Oil</h3>
+                                <p>Gloss-meets-treatment oil that cushions lips with peptides and plant squalane.</p>
+                                <div class="product-meta">
+                                    <span class="price">$22</span>
+                                    <button class="btn ghost small">Add to Bag</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card">
+                            <div class="product-media"
+                                style="background-image: url('https://images.unsplash.com/photo-1506617420156-8e4536971650?auto=format&fit=crop&w=900&q=80');">
+                            </div>
+                            <div class="product-body">
+                                <span class="pill">Limited</span>
+                                <h3>Prism Shadow Quad</h3>
+                                <p>Silky-soft pigments with molten shimmer for effortless day-to-night looks.</p>
+                                <div class="product-meta">
+                                    <span class="price">$28</span>
+                                    <button class="btn ghost small">Add to Bag</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card">
+                            <div class="product-media"
+                                style="background-image: url('https://images.unsplash.com/photo-1586495985096-74284c0f8f0c?auto=format&fit=crop&w=900&q=80');">
+                            </div>
+                            <div class="product-body">
+                                <span class="pill success">Vegan</span>
+                                <h3>Silk Veil Primer</h3>
+                                <p>Pore-blurring, hydrating primer with ceramides for all-day grip.</p>
+                                <div class="product-meta">
+                                    <span class="price">$26</span>
+                                    <button class="btn ghost small">Add to Bag</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card">
+                            <div class="product-media"
+                                style="background-image: url('https://images.unsplash.com/photo-1612815154858-60aa4c59eaa2?auto=format&fit=crop&w=900&q=80');">
+                            </div>
+                            <div class="product-body">
+                                <span class="pill accent">New</span>
+                                <h3>Halo Setting Mist</h3>
+                                <p>Dewy-finish setting mist with antioxidants and blue-light defense.</p>
+                                <div class="product-meta">
+                                    <span class="price">$24</span>
+                                    <button class="btn ghost small">Add to Bag</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card">
+                            <div class="product-media"
+                                style="background-image: url('https://images.unsplash.com/photo-1586495984972-5c8c1d1c97fd?auto=format&fit=crop&w=900&q=80');">
+                            </div>
+                            <div class="product-body">
+                                <span class="pill">Clean</span>
+                                <h3>Peptide Concealer</h3>
+                                <p>Stretchy, crease-resistant concealer infused with peptides and caffeine.</p>
+                                <div class="product-meta">
+                                    <span class="price">$27</span>
+                                    <button class="btn ghost small">Add to Bag</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card">
+                            <div class="product-media"
+                                style="background-image: url('https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=900&q=80');">
+                            </div>
+                            <div class="product-body">
+                                <span class="pill accent">Bestseller</span>
+                                <h3>Velour Cream Blush</h3>
+                                <p>Cream-to-satin blush that melts into skin with a natural flush.</p>
+                                <div class="product-meta">
+                                    <span class="price">$25</span>
+                                    <button class="btn ghost small">Add to Bag</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card">
+                            <div class="product-media"
+                                style="background-image: url('https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=900&q=80');">
+                            </div>
+                            <div class="product-body">
+                                <span class="pill success">Vegan</span>
+                                <h3>Cloud Lash Mascara</h3>
+                                <p>Weightless tubing mascara for lift, separation, and zero flake wear.</p>
+                                <div class="product-meta">
+                                    <span class="price">$23</span>
+                                    <button class="btn ghost small">Add to Bag</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card">
+                            <div class="product-media"
+                                style="background-image: url('https://images.unsplash.com/photo-1526045612212-70caf35c14df?auto=format&fit=crop&w=900&q=80');">
+                            </div>
+                            <div class="product-body">
+                                <span class="pill">Set</span>
+                                <h3>Artist Essentials Kit</h3>
+                                <p>Curated trio of tint, blush, and lip oil in our top-rated shades.</p>
+                                <div class="product-meta">
+                                    <span class="price">$68</span>
+                                    <button class="btn ghost small">Add to Bag</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card">
+                            <div class="product-media"
+                                style="background-image: url('https://images.unsplash.com/photo-1506617420156-8e4536971650?auto=format&fit=crop&w=900&q=80');">
+                            </div>
+                            <div class="product-body">
+                                <span class="pill accent">New</span>
+                                <h3>Prism Liner Duo</h3>
+                                <p>Ultra-precise gel liners with 24-hour wear and velvet glide.</p>
+                                <div class="product-meta">
+                                    <span class="price">$21</span>
+                                    <button class="btn ghost small">Add to Bag</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card">
+                            <div class="product-media"
+                                style="background-image: url('https://images.unsplash.com/photo-1526045612212-70caf35c14df?auto=format&fit=crop&w=900&q=80');">
+                            </div>
+                            <div class="product-body">
+                                <span class="pill">Clean</span>
+                                <h3>Silk Setting Powder</h3>
+                                <p>Featherlight loose powder that blurs pores and locks in hydration.</p>
+                                <div class="product-meta">
+                                    <span class="price">$30</span>
+                                    <button class="btn ghost small">Add to Bag</button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
