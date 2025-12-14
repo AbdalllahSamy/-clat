@@ -46,8 +46,8 @@
     position: sticky;
     top: 96px;
     align-self: start;
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.96);
+    border: 1px solid rgba(0, 0, 0, 0.08);
     border-radius: var(--radius);
     padding: 16px;
     box-shadow: var(--shadow);
@@ -84,7 +84,7 @@
     flex: 1;
     height: 6px;
     border-radius: 999px;
-    background: rgba(255, 255, 255, 0.06);
+    background: rgba(0, 0, 0, 0.08);
     position: relative;
     overflow: hidden;
 }
@@ -122,8 +122,8 @@
 .sort select {
     padding: 10px 12px;
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    background: rgba(0, 0, 0, 0.02);
     color: var(--text);
     font: inherit;
     outline: none;
@@ -132,6 +132,35 @@
 .sort select:focus {
     border-color: rgba(245, 143, 182, 0.6);
     box-shadow: 0 0 0 3px rgba(245, 143, 182, 0.15);
+}
+
+.products-page .products-grid {
+    align-items: stretch;
+}
+
+.products-page .product-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.products-page .product-media {
+    flex: 0 0 auto;
+}
+
+.products-page .product-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.products-page .product-body p {
+    display: none;
+}
+
+.products-page .product-meta {
+    margin-top: auto;
 }
 
 @media (max-width: 960px) {

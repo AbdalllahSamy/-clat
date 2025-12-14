@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
-    --bg: #0b0c14;
-    --panel: rgba(255, 255, 255, 0.04);
+    --bg: #f7f7fb;
+    --panel: rgba(0, 0, 0, 0.04);
     --accent: #f58fb6;
     --accent-2: #b49cff;
-    --text: #f6f7fb;
-    --muted: #a9adc1;
-    --shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+    --text: #171825;
+    --muted: #5c6075;
+    --shadow: 0 16px 50px rgba(0, 0, 0, 0.12);
     --radius: 18px;
     --glass: blur(16px) saturate(150%);
 }
@@ -27,7 +27,7 @@ html {
 
 body {
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
-    background: radial-gradient(circle at 20% 20%, rgba(181, 156, 255, 0.18), transparent 30%), radial-gradient(circle at 80% 10%, rgba(245, 143, 182, 0.22), transparent 28%), var(--bg);
+    background: radial-gradient(circle at 20% 20%, rgba(181, 156, 255, 0.22), transparent 30%), radial-gradient(circle at 80% 10%, rgba(245, 143, 182, 0.24), transparent 28%), var(--bg);
     color: var(--text);
     min-height: 100vh;
     line-height: 1.6;
@@ -53,8 +53,8 @@ button {
     width: 100%;
     z-index: 10;
     backdrop-filter: var(--glass);
-    background: rgba(11, 12, 20, 0.6);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    background: rgba(255, 255, 255, 0.94);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .nav-inner {
@@ -163,7 +163,7 @@ button {
     gap: 8px;
     padding: 10px 14px;
     border-radius: 999px;
-    background: rgba(255, 255, 255, 0.06);
+    background: rgba(0, 0, 0, 0.05);
     color: var(--text);
     font-size: 0.9rem;
     letter-spacing: 0.02em;
@@ -215,8 +215,9 @@ button {
 .stat {
     padding: 14px;
     border-radius: 14px;
-    background: var(--panel);
-    border: 1px solid rgba(255, 255, 255, 0.06);
+    background: rgba(255, 255, 255, 0.94);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    box-shadow: var(--shadow);
 }
 
 .stat .number {
@@ -235,8 +236,8 @@ button {
     min-height: 360px;
     border-radius: calc(var(--radius) + 4px);
     overflow: hidden;
-    background: linear-gradient(145deg, rgba(245, 143, 182, 0.22), rgba(181, 156, 255, 0.2));
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: linear-gradient(145deg, rgba(245, 143, 182, 0.2), rgba(181, 156, 255, 0.18));
+    border: 1px solid rgba(0, 0, 0, 0.06);
     box-shadow: var(--shadow);
 }
 
@@ -244,7 +245,7 @@ button {
     content: '';
     position: absolute;
     inset: 0;
-    background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.2), transparent 45%), radial-gradient(circle at 70% 20%, rgba(255, 255, 255, 0.14), transparent 40%), linear-gradient(180deg, rgba(11, 12, 20, 0) 0%, rgba(11, 12, 20, 0.7) 100%);
+    background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.8), transparent 50%), radial-gradient(circle at 70% 20%, rgba(255, 255, 255, 0.6), transparent 45%), linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.88) 100%);
     pointer-events: none;
 }
 
@@ -252,9 +253,9 @@ button {
     content: '';
     position: absolute;
     inset: 0;
-    background: url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1200&q=80') center/cover;
-    mix-blend-mode: lighten;
-    opacity: 0.68;
+    background: url('./imgs/hero.jpeg') center/cover;
+    mix-blend-mode: multiply;
+    opacity: 0.8;
     filter: saturate(1.05);
     animation: float 9s ease-in-out infinite;
 }
@@ -266,8 +267,8 @@ button {
     right: 24px;
     padding: 18px;
     border-radius: 16px;
-    background: rgba(11, 12, 20, 0.7);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(0, 0, 0, 0.08);
     box-shadow: var(--shadow);
     backdrop-filter: var(--glass);
     animation: fadeUp 1s ease forwards;
@@ -330,8 +331,8 @@ button {
     position: relative;
     border-radius: var(--radius);
     overflow: hidden;
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.94);
+    border: 1px solid rgba(0, 0, 0, 0.08);
     box-shadow: var(--shadow);
     transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
 }
@@ -341,15 +342,15 @@ button {
     position: absolute;
     inset: 0;
     pointer-events: none;
-    background: linear-gradient(180deg, rgba(245, 143, 182, 0.14), rgba(11, 12, 20, 0.75));
-    opacity: 0.7;
+    background: linear-gradient(180deg, rgba(245, 143, 182, 0.1), rgba(255, 255, 255, 0.9));
+    opacity: 0.8;
     mix-blend-mode: screen;
 }
 
 .product-card:hover {
     transform: translateY(-6px);
-    border-color: rgba(255, 255, 255, 0.16);
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    border-color: rgba(0, 0, 0, 0.12);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18);
 }
 
 .product-media {
@@ -366,7 +367,7 @@ button {
     padding: 18px;
     display: grid;
     gap: 10px;
-    background: rgba(11, 12, 20, 0.7);
+    background: rgba(255, 255, 255, 0.96);
     backdrop-filter: var(--glass);
 }
 
@@ -427,8 +428,8 @@ button {
 }
 
 .story-card {
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.96);
+    border: 1px solid rgba(0, 0, 0, 0.06);
     border-radius: var(--radius);
     padding: 22px;
     box-shadow: var(--shadow);
@@ -471,7 +472,7 @@ button {
     align-items: center;
     justify-content: space-between;
     gap: 12px;
-    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
     padding-top: 12px;
     color: var(--muted);
 }
@@ -494,8 +495,8 @@ button {
 }
 
 .pillar-card {
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.94);
+    border: 1px solid rgba(0, 0, 0, 0.06);
     border-radius: calc(var(--radius) - 4px);
     padding: 16px;
     display: grid;
@@ -505,14 +506,14 @@ button {
 
 .pillar-card:hover {
     transform: translateY(-4px);
-    border-color: rgba(255, 255, 255, 0.14);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+    border-color: rgba(0, 0, 0, 0.12);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
 }
 
 .about-visual {
     position: relative;
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.94);
+    border: 1px solid rgba(0, 0, 0, 0.06);
     border-radius: var(--radius);
     overflow: hidden;
     box-shadow: var(--shadow);
@@ -530,7 +531,7 @@ button {
     position: absolute;
     inset: auto 0 0 0;
     padding: 18px;
-    background: linear-gradient(180deg, rgba(11, 12, 20, 0) 0%, rgba(11, 12, 20, 0.9) 100%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 100%);
     backdrop-filter: var(--glass);
     display: grid;
     gap: 12px;
@@ -551,8 +552,9 @@ button {
 .metric {
     padding: 12px;
     border-radius: 12px;
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.94);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    box-shadow: var(--shadow);
 }
 
 .metric .number {
@@ -574,8 +576,8 @@ button {
 }
 
 .contact-form {
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.96);
+    border: 1px solid rgba(0, 0, 0, 0.06);
     border-radius: var(--radius);
     padding: 22px;
     display: grid;
@@ -599,8 +601,8 @@ button {
     width: 100%;
     padding: 12px 14px;
     border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    background: rgba(0, 0, 0, 0.02);
     color: var(--text);
     font: inherit;
     transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
@@ -611,7 +613,7 @@ button {
 .field textarea:focus {
     border-color: rgba(245, 143, 182, 0.6);
     box-shadow: 0 0 0 4px rgba(245, 143, 182, 0.15);
-    background: rgba(255, 255, 255, 0.06);
+    background: rgba(255, 255, 255, 0.94);
 }
 
 .field textarea {
@@ -629,8 +631,8 @@ button {
 }
 
 .info-card {
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.96);
+    border: 1px solid rgba(0, 0, 0, 0.06);
     border-radius: var(--radius);
     padding: 18px;
     box-shadow: var(--shadow);
@@ -671,8 +673,8 @@ button {
 .footer {
     margin-top: 32px;
     padding: 42px 22px 32px;
-    background: radial-gradient(circle at 10% 10%, rgba(181, 156, 255, 0.14), transparent 30%), radial-gradient(circle at 90% 0%, rgba(245, 143, 182, 0.16), transparent 26%), #080910;
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    background: radial-gradient(circle at 10% 10%, rgba(181, 156, 255, 0.16), transparent 30%), radial-gradient(circle at 90% 0%, rgba(245, 143, 182, 0.16), transparent 26%), #f3f2f8;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .footer-inner {
@@ -700,7 +702,7 @@ button {
     display: grid;
     place-items: center;
     border-radius: 10px;
-    background: rgba(255, 255, 255, 0.06);
+    background: rgba(0, 0, 0, 0.06);
     color: var(--text);
     font-weight: 700;
     transition: transform 0.2s ease, background 0.2s ease;
@@ -708,7 +710,7 @@ button {
 
 .socials a:hover {
     transform: translateY(-2px);
-    background: rgba(255, 255, 255, 0.12);
+    background: rgba(0, 0, 0, 0.12);
 }
 
 .footer-links {
@@ -749,8 +751,8 @@ button {
     min-width: 0;
     padding: 12px 14px;
     border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    background: rgba(0, 0, 0, 0.02);
     color: var(--text);
     font: inherit;
     outline: none;
@@ -765,7 +767,7 @@ button {
     max-width: 1200px;
     margin: 18px auto 0;
     padding-top: 18px;
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
     display: flex;
     align-items: center;
     justify-content: space-between;
